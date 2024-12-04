@@ -1,0 +1,73 @@
+html{
+    background-image:url('https://static.tumblr.com/67ea004b811e56c02f00341eba9f0fad/zvrjats/IdCns2qbo/tumblr_static_tumblr_static_2h8k2xyts4o488w8wo0kg8o4g_focused_v3.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+
+.box{
+    border: 10px dotted #f205fa;
+    background-color: rgba(5, 0, 16, 0.9);
+    border-radius:4px;
+    font-size:16px;
+    padding: 5px 5px 5px 15px;
+}
+
+.box2{
+    border: 10px dotted #08a8ff;
+    background-color: rgba(5, 0, 16, 0.9);
+    border-radius:4px;
+    font-size:16px;
+    padding: 5px 5px 5px 15px;
+}
+
+.box3{
+    border: 10px dotted #03fc13;
+    background-color: rgba(5, 0, 16, 0.9);
+    border-radius:4px;
+    font-size:16px;
+    padding: 5px 5px 5px 15px;
+}
+
+.maintext{
+    font-family: monospace;
+}
+
+.left-element {
+    display: inline-block;
+    float: none;
+    margin: 10px;
+}
+
+.right-element {
+    display: inline-block;
+    float: right;
+    margin: 10px;
+}
+
+.descBox {
+    display: inline-block;
+    margin: 10px;
+    clear: both;
+    width: auto;
+}
+
+.mainbarLeft {
+    float: left;
+    width: 180px;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    margin: 15px;
+    /*margin-top: 25px; */
+    text-align: center;
+
+    height: 100vh; /* 100% of the viewport height */
+    font-size: 1vh;
+
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
