@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>The Blog</title>
@@ -9,82 +10,44 @@
 </head>
 
 <body>
-<!--nav bar-->
-<div class="box3 mainbarLeft left-element">
-    <h1 class="maintext" style="color: darkseagreen; font-size: 25px;">
-        ↄƐ: NAV :3c
-    </h1>
-    <h2 class="maintext" style="color: plum; font-size: 18px;">
-        <a href="index.html">home</a>
-    </h2>
+    <!--nav bar-->
+    <div id="navbar"></div>
+    <script>
+        // Load navbar.html and inject it into the #navbar div
+        fetch("./navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
+
+    <!--site name-->
+    <div class="box left-element" style="width:auto;">
+        <h1 id="rainbow" class="maintext">
+            hella.j.8by4
+        </h1>
+        <h4 class="maintext" style="color: antiquewhite">
+            whatchulookin at
+        </h4>
+
+    </div>
 
     <br>
     <br>
-
-    <h2 class="maintext" style="color: plum; font-size: 18px;">
-        /\/\8by4/\/\
-    </h2>
-
-        <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-            <a href="pages/8by4/8by4.articles.html">0 - 8by4.articles</a>
-        </h3>
-
-        <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-            1 - 8by4.projects
-        </h3>
-
-        <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-            2 - 8by4.arts
-        </h3>
-
     <br>
     <br>
 
-    <h2 class="maintext" style="color: coral; font-size: 18px;">
-        {[eggnog]}
-    </h2>
-
-        <h3 class="maintext" style="color: brown; font-size: 13px;">
-            <a href="pages/eggnog/eggnog.articles.html">0 - eggnog.articles</a>
-        </h3>
-
-        <h3 class="maintext" style="color: brown; font-size: 13px;">
-            1 - eggnog.projects
-        </h3>
-
-        <h3 class="maintext" style="color: brown; font-size: 13px;">
-            2 - eggnog.arts
-        </h3>
-    <br>
-    <br>
-</div>
-
-<!--site name-->
-<div class="box left-element" style="width:auto;">
-    <h1 id="rainbow" class="maintext">
-        hella.j.8by4
-    </h1>
-    <h4 class="maintext" style="color: antiquewhite">
-        whatchulookin at
-    </h4>
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-
-<!--desc-->
-<div class="box2 descBox">
-    <h2 class="maintext" style="color: antiquewhite">
-        about:
-    </h2>
+    <!--desc-->
+    <div class="box2 descBox">
+        <h2 class="maintext" style="color: antiquewhite">
+            about:
+        </h2>
         <h3 class="maintext" style="color: antiquewhite">
             = This is just a goofy place for my random brain shit
         </h3>
 
-</div>
+    </div>
 
 
 

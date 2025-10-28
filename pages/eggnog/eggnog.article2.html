@@ -1,113 +1,91 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>The Truth, The One and Only Truth. The Only Source of Information You'll Ever Need.</title>
     <link rel="stylesheet" href="../../css/custom.css">
     <script src="../../js/custom/index.js"></script>
-    <embed name="abba" src="../../assets/music/ABBA - The Winner Takes It All.mp3" loop="true" hidden="true" autostart="true">
+    <embed name="abba" src="../../assets/music/ABBA - The Winner Takes It All.mp3" loop="true" hidden="true"
+        autostart="true">
 </head>
+
 <body>
+    <!--nav bar-->
+    <div id="navbar"></div>
+    <script>
+        // Load navbar.html and inject it into the #navbar div
+        fetch("../../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
 
-<!--nav bar-->
-<div class="box3 mainbarLeft">
-    <h1 class="maintext" style="color: darkseagreen; font-size: 25px;">
-        ↄƐ: NAV :3c
-    </h1>
-    <h2 class="maintext" style="color: plum; font-size: 18px;">
-        <a href="../../index.html">home</a>
-    </h2>
-    <br>
-    <br>
+    <!--site name-->
+    <div class="box left-element" style="width:auto;">
+        <h1 id="rainbow" class="maintext">
+            eggnog.articles
+        </h1>
+        <h4 class="maintext" style="color: antiquewhite">
+            uuhhhh IDK
+        </h4>
 
-    <h2 class="maintext" style="color: plum; font-size: 18px;">
-        /\/\8by4/\/\
-    </h2>
-
-    <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-        <a href="../../pages/8by4/8by4.articles.html">0 - 8by4.articles</a>
-    </h3>
-
-    <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-        1 - 8by4.projects
-    </h3>
-
-    <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-        2 - 8by4.arts
-    </h3>
-
-    <br>
-    <br>
-
-    <h2 class="maintext" style="color: coral; font-size: 18px;">
-        {[eggnog]}
-    </h2>
-
-    <h3 class="maintext" style="color: brown; font-size: 13px;">
-        <a href="../../pages/eggnog/eggnog.articles.html">0 - eggnog.articles</a>
-    </h3>
-
-    <h3 class="maintext" style="color: brown; font-size: 13px;">
-        1 - eggnog.projects
-    </h3>
-
-    <h3 class="maintext" style="color: brown; font-size: 13px;">
-        2 - eggnog.arts
-    </h3>
-    <br>
-    <br>
-</div>
-
-<!--site name-->
-<div class="box left-element" style="width:auto;">
-    <h1 id="rainbow" class="maintext">
-        eggnog.articles
-    </h1>
-    <h4 class="maintext" style="color: antiquewhite">
-        uuhhhh IDK
-    </h4>
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-
-<!--desc-->
-<div class="box2 descBox" style="width: 80%">
-    <h2 class="maintext" style="color: #a3cfbb">
-        the worst deal ever made: why i have to watch one piece
-    </h2>
-    
-    <h3 style="color: green">♪The Winner Takes It All - ABBA♪</h3>
-
-    <div class="box" style="width: min-content">
-        <img src="../../assets/slippinluffy.png" alt="Peta">
     </div>
 
-    <h3 class="maintext" style="color: antiquewhite">
-        &nbsp After finishing one of the greatest shows ever made, Better Call Saul, I had a burning desire to let people know how great the show is.
-        I preached from the rooftops: "Hark! Watch Better Call Saul! Watch Better Caul Saul!"
-        I had nothing but the best intentions, hoping my peers would embark on the great journey that I was so lucky to engage in.
-        However, after months of practically begging my friends to watch the show (one of the greatest shows ever made, keep in mind), I started to become desperate.
-        <br><br>
-        Enter: Vinnie. The four-eyed, blue-toed, degenerate chronic gambler.
-        Always one to smell out opportunities to inspire suffering, the Italian devil sensed my desperation and decided to entertain my plea.
-        I must admit, I am not proud of what I did next. I was so desperate for someone, anyone, to watch Better Call Saul that I came up with the worst deal in human history.
-        Out of sheer goodwill towards my fellow man, I offered to watch all of Vinnie's oh-so-precious One Piece if he could finish all of Better Call Saul.
-        As I shook the devils hand, the stakes hit me for the first time. What have I done? All of One Piece? Over 1,000 episodes?
-        How could I be so foolish? I am still deeply sickened by the weakness I displayed on that day.
-        <br><br>
-        However, Vinnie is nothing if not noncommittal. I waiting anxiously for months. He updated me frequently and seemed to be making progress.
-        When he finally told me he was on the last season, I began to accept my fate. I had nightmares that night. After a few weeks, however, he had still not finished the show.
-        Am I free? Was this contract delayed by the sloth of the beast?
-        Months and months past and I eventually relaxed, hoping that he would never return to the show (one of the greatest shows of all time, Better Call Saul).
-        But, not unlike Jimmy McGill, what I should've realized is that I cannot outrun the consequences of my decisions.
-        <br><br>
-        Today, I was informed that Vinnie has finished Better Call Saul. It is with a heavy heart that I resign myself to the whims of fate. I will see you someday, on the other side of the pirate-ridden sea.
-    </h3>
+    <br>
+    <br>
+    <br>
+    <br>
 
-</div>
+    <!--desc-->
+    <div class="box2 descBox" style="width: 80%">
+        <h2 class="maintext" style="color: #a3cfbb">
+            the worst deal ever made: why i have to watch one piece
+        </h2>
+
+        <h3 style="color: green">♪The Winner Takes It All - ABBA♪</h3>
+
+        <div class="box" style="width: min-content">
+            <img src="../../assets/slippinluffy.png" alt="Peta">
+        </div>
+
+        <h3 class="maintext" style="color: antiquewhite">
+            &nbsp After finishing one of the greatest shows ever made, Better Call Saul, I had a burning desire to let
+            people know how great the show is.
+            I preached from the rooftops: "Hark! Watch Better Call Saul! Watch Better Caul Saul!"
+            I had nothing but the best intentions, hoping my peers would embark on the great journey that I was so lucky
+            to engage in.
+            However, after months of practically begging my friends to watch the show (one of the greatest shows ever
+            made, keep in mind), I started to become desperate.
+            <br><br>
+            Enter: Vinnie. The four-eyed, blue-toed, degenerate chronic gambler.
+            Always one to smell out opportunities to inspire suffering, the Italian devil sensed my desperation and
+            decided to entertain my plea.
+            I must admit, I am not proud of what I did next. I was so desperate for someone, anyone, to watch Better
+            Call Saul that I came up with the worst deal in human history.
+            Out of sheer goodwill towards my fellow man, I offered to watch all of Vinnie's oh-so-precious One Piece if
+            he could finish all of Better Call Saul.
+            As I shook the devils hand, the stakes hit me for the first time. What have I done? All of One Piece? Over
+            1,000 episodes?
+            How could I be so foolish? I am still deeply sickened by the weakness I displayed on that day.
+            <br><br>
+            However, Vinnie is nothing if not noncommittal. I waiting anxiously for months. He updated me frequently and
+            seemed to be making progress.
+            When he finally told me he was on the last season, I began to accept my fate. I had nightmares that night.
+            After a few weeks, however, he had still not finished the show.
+            Am I free? Was this contract delayed by the sloth of the beast?
+            Months and months past and I eventually relaxed, hoping that he would never return to the show (one of the
+            greatest shows of all time, Better Call Saul).
+            But, not unlike Jimmy McGill, what I should've realized is that I cannot outrun the consequences of my
+            decisions.
+            <br><br>
+            Today, I was informed that Vinnie has finished Better Call Saul. It is with a heavy heart that I resign
+            myself to the whims of fate. I will see you someday, on the other side of the pirate-ridden sea.
+        </h3>
+
+    </div>
 
 </body>
+
 </html>>

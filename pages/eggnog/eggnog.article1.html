@@ -1,116 +1,91 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>The Truth, The One and Only Truth. The Only Source of Information You'll Ever Need.</title>
     <link rel="stylesheet" href="../../css/custom.css">
     <script src="../../js/custom/index.js"></script>
-    <embed name="GoodEnough" src="../../assets/music/SquarePants Production Music - South Pacific Island II.mp3" loop="true" hidden="true" autostart="true">
+    <embed name="GoodEnough" src="/assets/music/SpongeBob SquarePants Production Music - South Pacific Island II.mp3"
+        loop="true" hidden="true" autostart="true">
 </head>
+
 <body>
 
-<!--nav bar-->
-<div class="box3 mainbarLeft">
-    <h1 class="maintext" style="color: darkseagreen; font-size: 25px;">
-        ↄƐ: NAV :3c
-    </h1>
-    <h2 class="maintext" style="color: plum; font-size: 18px;">
-        <a href="../../index.html">home</a>
-    </h2>
-    <br>
-    <br>
+    <!--nav bar-->
+    <div id="navbar"></div>
+    <script>
+        // Load navbar.html and inject it into the #navbar div
+        fetch("../../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
 
-    <h2 class="maintext" style="color: plum; font-size: 18px;">
-        /\/\8by4/\/\
-    </h2>
+    <!--site name-->
+    <div class="box left-element" style="width:auto;">
+        <h1 id="rainbow" class="maintext">
+            eggnog.articles
+        </h1>
+        <h4 class="maintext" style="color: antiquewhite">
+            uuhhhh IDK
+        </h4>
 
-    <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-        <a href="../../pages/8by4/8by4.articles.html">0 - 8by4.articles</a>
-    </h3>
-
-    <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-        1 - 8by4.projects
-    </h3>
-
-    <h3 class="maintext" style="color: rebeccapurple; font-size: 13px;">
-        2 - 8by4.arts
-    </h3>
-
-    <br>
-    <br>
-
-    <h2 class="maintext" style="color: coral; font-size: 18px;">
-        {[eggnog]}
-    </h2>
-
-    <h3 class="maintext" style="color: brown; font-size: 13px;">
-        <a href="../../pages/eggnog/eggnog.articles.html">0 - eggnog.articles</a>
-    </h3>
-
-    <h3 class="maintext" style="color: brown; font-size: 13px;">
-        1 - eggnog.projects
-    </h3>
-
-    <h3 class="maintext" style="color: brown; font-size: 13px;">
-        2 - eggnog.arts
-    </h3>
-    <br>
-    <br>
-</div>
-
-<!--site name-->
-<div class="box left-element" style="width:auto;">
-    <h1 id="rainbow" class="maintext">
-        eggnog.articles
-    </h1>
-    <h4 class="maintext" style="color: antiquewhite">
-        uuhhhh IDK
-    </h4>
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-
-<!--desc-->
-<div class="box2 descBox" style="width: 80%">
-    <h2 class="maintext" style="color: #a3cfbb">
-        Why it's okay to make fun of people with glasses: the inherent humor of "four-eyes"
-    </h2>
-    
-    <h3 style="color: green">♪South Pacific Island II - Gerhard Trede♪</h3>
-
-    <div class="box" style="width: min-content">
-        <img src="../../assets/glasses.png" alt="Vinnie">
     </div>
 
-    <h3 class="maintext" style="color: antiquewhite">
-        &nbsp Some people think that it isn't okay to make fun of people for needing glasses. Many people think since they can't control it, it's off the table.
-        However, there are three core reasons why this is sentiment is undeniably false.
-        <br>
-        <br>
-        My first piece of evidence is anecdotal, but nonetheless relevant. I know a lot of people who wear glasses: my brother, a few friends, etc.
-        One thing that these people have in common is that they're not me, and therefore I am better at seeing than them, which is quite frankly embarrassing.
-        Could you imagine? Jesus. Since they need glasses and I don't, I get to point out an objective fault in their function as a human being.
-        <br>
-        <br>
-        If no one can make fun of glasses, we would lose the one of the best insults in the English language: four-eyes.
-        "Four-eyes" is the funniest shit I've ever heard. It beats any possible argument. "You've never had a girlfriend-" four-eyes; "you suck at melee-" four-eyes;
-        "you're unlikeable-" what's that four-eyes? Yeah that's what I thought, dumbass can't even see. How did you fuck that up?
-        Humans have a responsibility to keep this one going for as long as possible.
-        <br>
-        <br>
-        The last reason that the glasses-wearing community should be free game is my friend Vincent.
-        This guy's glasses are thicker than the crust on his keyboard which is saying something.
-        He is practically blind without them, yet he constantly loses them (idiot). He also plays pikachu in melee (idiot).
-        If you wear glasses, he's on your side, so nothing else really matters.
-        <br>
-        <br>
-        So for the normal people in the world: go out and spread the good word.
-    </h3>
+    <br>
+    <br>
+    <br>
+    <br>
 
-</div>
+    <!--desc-->
+    <div class="box2 descBox" style="width: 80%">
+        <h2 class="maintext" style="color: #a3cfbb">
+            Why it's okay to make fun of people with glasses: the inherent humor of "four-eyes"
+        </h2>
+
+        <h3 style="color: green">♪South Pacific Island II - Gerhard Trede♪</h3>
+
+        <div class="box" style="width: min-content">
+            <img src="/assets/glasses.png" alt="Vinnie">
+        </div>
+
+        <h3 class="maintext" style="color: antiquewhite">
+            &nbsp Some people think that it isn't okay to make fun of people for needing glasses. Many people think
+            since they can't control it, it's off the table.
+            However, there are three core reasons why this is sentiment is undeniably false.
+            <br>
+            <br>
+            My first piece of evidence is anecdotal, but nonetheless relevant. I know a lot of people who wear glasses:
+            my brother, a few friends, etc.
+            One thing that these people have in common is that they're not me, and therefore I am better at seeing than
+            them, which is quite frankly embarrassing.
+            Could you imagine? Jesus. Since they need glasses and I don't, I get to point out an objective fault in
+            their function as a human being.
+            <br>
+            <br>
+            If no one can make fun of glasses, we would lose the one of the best insults in the English language:
+            four-eyes.
+            "Four-eyes" is the funniest shit I've ever heard. It beats any possible argument. "You've never had a
+            girlfriend-" four-eyes; "you suck at melee-" four-eyes;
+            "you're unlikeable-" what's that four-eyes? Yeah that's what I thought, dumbass can't even see. How did you
+            fuck that up?
+            Humans have a responsibility to keep this one going for as long as possible.
+            <br>
+            <br>
+            The last reason that the glasses-wearing community should be free game is my friend Vincent.
+            This guy's glasses are thicker than the crust on his keyboard which is saying something.
+            He is practically blind without them, yet he constantly loses them (idiot). He also plays pikachu in melee
+            (idiot).
+            If you wear glasses, he's on your side, so nothing else really matters.
+            <br>
+            <br>
+            So for the normal people in the world: go out and spread the good word.
+        </h3>
+
+    </div>
 
 </body>
+
 </html>
