@@ -13,7 +13,7 @@
     <div id="navbar"></div>
     <script>
         // Load navbar.html and inject it into the #navbar div
-        fetch("/navbar.html")
+        fetch("../../navbar.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("navbar").innerHTML = data;
@@ -36,12 +36,9 @@
 
     <!--desc-->
     <div class="box2 descBox">
-        <h3 class="maintext" style="color: antiquewhite">
-            <a href="./eggnog.art2.html">Feb 13, 2026 -- First Contact</a>
-        </h3>
-        <h3 class="maintext" style="color: antiquewhite">
-            <a href="./eggnog.art1.html">Backlog</a>
-        </h3>
+        <br>
+        <img src="../../assets/arts/eggnog/first contact.jpg">
+        <br>
     </div>
 
 </body>
