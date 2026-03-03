@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music to my ears</title>
+    <link rel="stylesheet" href="../../css/custom.css">
+    <script src="../../js/custom/index.js"></script>
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <div id="navbar"></div>
+    <script>
+        // Load navbar.html and inject it into the #navbar div
+        fetch("../../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
+
+    <!--site name-->
+    <div class="box left-element" style="width:auto;">
+        <h1 id="rainbow" class="maintext">
+            eggnog.music
+        </h1>
+        <h4 class="maintext" style="color: antiquewhite">
+            Music to my ears
+        </h4>
+
+    </div>
+
+    <br>
+
+    <!--desc-->
+    <div class="box2 descBox">
+        <h2 class="maintext" style="color: #a3cfbb">
+            Unicellular: Single-Celled Type Beats -- Mar 2, 2026
+        </h2>
+        <div class="box" style="width: min-content">
+            <img src="../../assets/original_music/unicellular/unicellular.png" alt="box">
+        </div>
+        <h3 class="maintext" style="color: antiquewhite">
+            1 - prokaryote<br>
+            <audio controls>
+                <source src="../../assets/original_music/unicellular/1 - prokaryote.ogg" type="audio/ogg">
+            </audio>
+            <br><br>
+            2 - protozoa<br>
+            <audio controls>
+                <source src="../../assets/original_music/unicellular/2 - protozoa.ogg" type="audio/ogg">
+            </audio>
+            <br><br>
+            3 - plasmodium<br>
+            <audio controls>
+                <source src="../../assets/original_music/unicellular/3 - plasmodium.ogg" type="audio/ogg">
+            </audio>
+            <br><br>
+            4 - archaea<br>
+            <audio controls>
+                <source src="../../assets/original_music/unicellular/4 - archaea.ogg" type="audio/ogg">
+            </audio>
+            <br><br>
+            5 - plasmodium<br>
+            <audio controls>
+                <source src="../../assets/original_music/unicellular/5 - bacteria.ogg" type="audio/ogg">
+            </audio>
+            <br><br>
+            6 - psuedopod<br>
+            <audio controls>
+                <source src="../../assets/original_music/unicellular/6 - psuedopod.ogg" type="audio/ogg">
+            </audio>
+            <br><br>
+            7 - cilia<br>
+            <audio controls>
+                <source src="../../assets/original_music/unicellular/7 - cilia.ogg" type="audio/ogg">
+            </audio>
+            <br><br>
+            8 - flagellum<br>
+            <audio controls>
+                <source src="../../assets/original_music/unicellular/8 - flagellum.ogg" type="audio/ogg">
+            </audio>
+        </h3>
+
+    </div>
+
+</body>
+
+</html>
