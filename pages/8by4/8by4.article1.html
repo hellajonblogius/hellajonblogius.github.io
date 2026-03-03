@@ -1,10 +1,69 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Some idiot writing this</title>
+    <link rel="stylesheet" href="../../css/custom.css">
+    <script src="../../js/custom/index.js"></script>
+    <embed name="NKC" src="/assets/music/On A Bicycle Built For Two.mp3"
+        loop="true" hidden="true" autostart="true">
 </head>
+
 <body>
 
+    <!--nav bar-->
+    <div id="navbar"></div>
+    <script>
+        // Load navbar.html and inject it into the #navbar div
+        fetch("../../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
+
+    <!--site name-->
+    <div class="box left-element" style="width:auto;">
+        <h1 id="rainbow" class="maintext">
+            8by4.articles
+        </h1>
+        <h4 class="maintext" style="color: antiquewhite">
+            uuhhhh IDK
+        </h4>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--desc-->
+    <div class="box2 descBox" style="width: 80%">
+        <h2 class="maintext" style="color: #a3cfbb">
+            I could possibly be an insane person(crazy)
+        </h2>
+
+        <h3 style="color: green">♪On A Bicycle Built For Two - Nat King Cole♪</h3>
+
+        <div class="box" style="width: min-content">
+            <img src="/assets/insane.jpg" alt="Melol">
+        </div>
+
+        <h3 class="maintext" style="color: antiquewhite">
+            &nbsp I have no idea if this is product of my upbringing, education, or choice of social companions; But I may be going nuts(CUCKOO).
+            <br>
+            Compared to everybody I have ever talked to has a way more normal brain than me. Like I feel like I have such a specific experience on this Earth. For one, 
+            my shit is loud as hell; all day everyday there is just music in my head like I'm some cuck jukebox. Even to just think or visualize something I have to be listening to
+            some kinda music which is mad inconvienent considering my headphones suck ass.
+            <br>
+            Especially if you consider my interests? What do you MEAN my special interests are collecting every piece of physical media for some random obscure bullshit.
+            And don't even get me started on the furry shit.
+            <br>
+            I wanna draw and make games and shit but my evil ass brain just says "Nuh uh homo". Which is a massive bummer. It's cool tho at least I'm sorta decent looking.
+    </div>
+
 </body>
+
 </html>
