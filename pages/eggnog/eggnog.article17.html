@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Truth, The One and Only Truth. The Only Source of Information You'll Ever Need.</title>
+    <link rel="stylesheet" href="../../css/custom.css">
+    <script src="../../js/custom/index.js"></script>
+    <embed name="half" src="../../assets/music/Darkroom (Remastered 2011).ogg" loop="true" hidden="true"
+        autoplay="true">
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <div id="navbar"></div>
+    <script>
+        // Load navbar.html and inject it into the #navbar div
+        fetch("../../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
+
+    <!--site name-->
+    <div class="box left-element" style="width:auto;">
+        <h1 id="rainbow" class="maintext">
+            eggnog.articles
+        </h1>
+        <h4 class="maintext" style="color: antiquewhite">
+            uuhhhh IDK
+        </h4>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--desc-->
+    <div class="box2 descBox" style="width: 80%">
+        <h2 class="maintext" style="color: #a3cfbb">
+            D-Day is happening inside my mind at all times -- May 14, 2026
+        </h2>
+
+        <h3 style="color: green">♪Darkroom - Paul McCartney♪</h3>
+
+        <div class="box" style="width: min-content">
+            <img src="../../assets/dday.png" alt="shell shock">
+        </div>
+
+        <h3 class="maintext" style="color: antiquewhite">
+            D-Day is happening inside my mind at all times
+            <br><br>
+            The inside of my mind is like the beaches of Normandy on the 6th of June, 1944. The Germans are my executive
+            function and the Allies are a raging river of stupid ideas. Despite the disadvantageous landing and a
+            constant onslaught of machine gun fire, some ideas get through and overtake important choke points.
+            <br><br>
+            While all of the ideas are stupid, some of them are sticky. Ideas like UNICELLULAR: single-celled type
+            beats. Ideas like the Great List of Funny Cowboys names. Ideas like Pocket Idiot. Sticky ideas are
+            dangerous. They overpower useful ideas like "I should try to get a girlfriend." Because, of course, who
+            needs a girlfriend when you have a Pocket Idiot?
+            <br><br>
+            We all know how D-Day went we all know what's going on upstairs. Not to suggest that the Germans were the
+            good guys or anything I'm just using the physical properties of the battle to illustrate the inner
+            machinations of my pea brain. NAZIS ARE BAD.
+            <br><br>
+            over and out.
+        </h3>
+    </div>
+
+</body>
+
+</html>>
