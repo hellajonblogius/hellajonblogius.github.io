@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Truth, The One and Only Truth. The Only Source of Information You'll Ever Need.</title>
+    <link rel="stylesheet" href="../../css/custom.css">
+    <script src="../../js/custom/index.js"></script>
+    <embed name="half" src="../../assets/music/Love To Say Dada.ogg" loop="true" hidden="true" autoplay="true">
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <div id="navbar"></div>
+    <script>
+        // Load navbar.html and inject it into the #navbar div
+        fetch("../../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
+
+    <!--site name-->
+    <div class="box left-element" style="width:auto;">
+        <h1 id="rainbow" class="maintext">
+            eggnog.articles
+        </h1>
+        <h4 class="maintext" style="color: antiquewhite">
+            uuhhhh IDK
+        </h4>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--desc-->
+    <div class="box2 descBox" style="width: 80%">
+        <h2 class="maintext" style="color: #a3cfbb">
+            my life as a teenage worm part 3: wavering wormsense -- May 27, 2026
+        </h2>
+
+        <h3 style="color: green">♪Love to Say Dada - Brian Wilson♪</h3>
+
+        <div class="box" style="width: min-content">
+            <img src="../../assets/worm part 3.png" alt="worm 3">
+        </div>
+
+        <h3 class="maintext" style="color: antiquewhite">
+            try as i may, i cannot excise paul's final words from my worm brain. it has been weeks since he ventured
+            onto the pavement, and he is most certainly dead. an enviable fate, really. tonight's spent in rain once
+            again, and the aroma of freshly moistened soil stirs up troubling memories. now i gaze out across the wet
+            pavement, my wormsense wavering.
+            <br><br>
+            foolishness or apathy, which is the lesser sin? tonight, i choose foolishness. tonight, i embark.
+        </h3>
+    </div>
+
+</body>
+
+</html>>
