@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Truth, The One and Only Truth. The Only Source of Information You'll Ever Need.</title>
+    <link rel="stylesheet" href="../../css/custom.css">
+    <script src="../../js/custom/index.js"></script>
+    <embed name="half" src="../../assets/music/Deadlock OST - Hideout.mp3" loop="true" hidden="true" autoplay="true">
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <div id="navbar"></div>
+    <script>
+        // Load navbar.html and inject it into the #navbar div
+        fetch("../../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
+
+    <!--site name-->
+    <div class="box left-element" style="width:auto;">
+        <h1 id="rainbow" class="maintext">
+            eggnog.articles
+        </h1>
+        <h4 class="maintext" style="color: antiquewhite">
+            uuhhhh IDK
+        </h4>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--desc-->
+    <div class="box2 descBox" style="width: 80%">
+        <h2 class="maintext" style="color: #a3cfbb">
+            Signs and symptoms of Wretched Unwellness -- October 17, 2026
+        </h2>
+
+        <h3 style="color: green">♪Hideout - Deadlock OST (Composer Unknown)♪</h3>
+
+        <div class="box" style="width: min-content">
+            <img src="../../assets/unwell.png" alt="unwell">
+        </div>
+
+        <h3 class="maintext" style="color: antiquewhite">
+            Wretched Unwellness is a state of mental decay that erodes the bonding of one's soul to their body. When a
+            person begins there descent into Wretched Unwellness, they display symptoms that dangerously reinforce their
+            condition. Like a virus that hijacks the immune system, Wretched Unwellness abuses the host's ability to
+            rationalize as a means to justify their own delusions. Below are some of the most common signs
+            and symptoms of Wretched Unwellness.
+            <br><br>
+            -- Irritability -- <br>
+            The Unwell becomes irrationally upset by minor transgressions, even taking them as personal insults.
+            <br><br>
+            -- Paranoia -- <br>
+            The Unwell connects disparate events and details to their personal insecurities. This ranges from small
+            details (a glance from a stranger appears to the Unwell as a scornful glare) to elaborate conspiracies (the
+            Unwell believes their mother is plotting to poison them).
+            <br><br>
+            -- Reduced Vocabulary --<br>
+            The Unwell shows a reduced vocabulary relative to their baseline. They find it difficult to express
+            themselves with written and spoken word.
+            <br><br>
+            -- Egotism --<br>
+            The Unwell sees themselves as more important than they are. They overestimate their own intelligence and
+            ability while demeaning others. When another person makes a mistake, the Wretchedly Unwell considers the
+            mistake as proof of both the other's incompetence and their own superiority. They often suffer from
+            delusions of grandeur.
+            <br><br>
+            -- Tunnel Vision --<br>
+            The Unwell is unable to see what is clear to others. They have trouble considering other perspectives.
+            <br><br>
+            -- Thought Validity --<br>
+            The Unwell struggles to weigh the value of individual thoughts. Each thought that enters their brain seems
+            equally valid, muddying their judgment.
+        </h3>
+    </div>
+
+</body>
+
+</html>>
